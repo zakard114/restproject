@@ -4,6 +4,8 @@ import com.springboot.restproject.dto.MemberDto;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
@@ -13,8 +15,11 @@ import java.util.Map;
 @RequestMapping("/api/v1/get-api")
 public class GetController {
 
+    private final Logger LOGGER = LoggerFactory.getLogger(GetController.class);
+
     @GetMapping("/variable1/{variable}")
     public String getVariable1(@PathVariable("variable") String var){
+        LOGGER.info("Value received through @PathVariable : {}", var);
         return var;
     }
 
@@ -46,5 +51,17 @@ public class GetController {
     @GetMapping(value = "/request2")
     public String getRequestParam2(MemberDto memberDto){
         return memberDto.toString();
+    }
+
+    @RequestMapping(value = "/hello", method = RequestMethod.GET)
+    public String getHello(){
+        LOGGER.info("'getHello' method called");
+        return "Hello World";
+    }
+
+    @GetMapping(value = "/name")
+    public String getName(){
+        LOGGER.info("'getName' method called");
+        return "Heeju";
     }
 }
