@@ -1,6 +1,6 @@
 package com.springboot.restproject.controller;
 
-import com.springboot.restproject.dto.MemberDto;
+import com.springboot.restproject.data.dto.MemberDto;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;

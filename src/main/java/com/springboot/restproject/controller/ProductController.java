@@ -1,8 +1,8 @@
 package com.springboot.restproject.controller;
 
-import com.springboot.restproject.dto.ChangeProductNameDto;
-import com.springboot.restproject.dto.ProductDto;
-import com.springboot.restproject.dto.ProductResponseDto;
+import com.springboot.restproject.data.dto.ChangeProductNameDto;
+import com.springboot.restproject.data.dto.ProductDto;
+import com.springboot.restproject.data.dto.ProductResponseDto;
 import com.springboot.restproject.service.ProductService;
 import io.swagger.v3.oas.annotations.Parameter;
 import lombok.RequiredArgsConstructor;

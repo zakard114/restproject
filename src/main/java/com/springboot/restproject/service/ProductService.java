@@ -1,7 +1,7 @@
 package com.springboot.restproject.service;
 
-import com.springboot.restproject.dto.ProductDto;
-import com.springboot.restproject.dto.ProductResponseDto;
+import com.springboot.restproject.data.dto.ProductDto;
+import com.springboot.restproject.data.dto.ProductResponseDto;
 
 public interface ProductService {
 

@@ -1,4 +1,4 @@
-package com.springboot.restproject.dto;
+package com.springboot.restproject.data.dto;
 
 import lombok.Getter;
 import lombok.Setter;

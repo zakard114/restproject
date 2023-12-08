@@ -1,7 +1,5 @@
 package com.springboot.restproject.controller;
 
-import com.springboot.restproject.dto.MemberDto;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
