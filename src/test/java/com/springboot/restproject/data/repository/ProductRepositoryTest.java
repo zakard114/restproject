@@ -27,5 +27,10 @@ public class ProductRepositoryTest {
         assertEquals(product.getName(), savedProduct.getName());
         assertEquals(product.getPrice(), savedProduct.getPrice());
         assertEquals(product.getStock(), savedProduct.getStock());
+
+        // for auditingTest
+        System.out.println("productName : "+savedProduct.getName());
+        System.out.println("createdAt : "+savedProduct.getCreatedAt());
     }
+
 }
